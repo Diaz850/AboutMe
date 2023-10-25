@@ -1,16 +1,16 @@
 'use strict';
 
-// let userName = prompt('Hello! What is your name?');
-// alert('Welcome! ' + userName + ', Thanks for checking out my page!')
+let userName = prompt('Hello! What is your name?');
+alert('Welcome! ' + userName + ', Thanks for checking out my page!')
 
 
 function question1() {
-  let location = prompt('Where am I from?').toLowerCase();
+  let location = prompt('Which state do you think I live in?').toLowerCase();
   if (location === 'florida') {
-    alert('Correct!');
+    alert('Correct! The SunShine State');
     console.log('Correct!');
   } else {
-    alert('Wrong!');
+    alert('Wrong! Who would want to live there?!');
     console.log('Wrong!');
   }
 }
@@ -18,51 +18,52 @@ question1();
 
 function question2(){
   let military = prompt('Was I a member of the United States Navy?').toUpperCase();
-  if (military === 'yes') {
-    alert('Correct!');
+  if (military === 'YES') {
+    alert('Correct! I served 4 long years in Americas Finest Navy.');
     console.log('Correct!');
   } else {
-    alert('Nope! Try the opposite answer next time!')
+    alert('Wrong! I did my time!')
     console.log('Nope! Try the opposite answer next time!')
   }
 }
 question2()
 
 function question3(){
-  let pet = prompt('Do I have a dog named Osita?');
+  let pet = prompt('Do I have a dog named Osita?').toLowerCase();
   if(pet === 'yes'){
-    alert('That is right!')
+    alert('That is right! She came with my wife as a package deal!')
     console.log('That is right!')
   } else{
-    alert('Try again next time!')
+    alert('Wrong! I couldnt imagine a life without her!')
     console.log('Try again next time!')
   }
 }
 question3();
 
 function question4(){
-  let police = prompt('Did I ever pursue a career in Law Enforcement?');
+  let police = prompt('Did I ever pursue a career in Law Enforcement?').toLowerCase();
   if (police === 'yes'){
-    alert('Yeah!')
+    alert('Yeah! My dreams were shattered because Im colorblind!')
     console.log('Yeah!')
   } else{
-    alert('You must have not read my about me!');
+    alert('Wrong! I always wanted to chase down bad guys!');
     console.log('You must have not read my about me!');
   }
 }
 question4();
 
 function question5(){
-  let weld = prompt('Am I a certified welder?')
+  let weld = prompt('Am I a certified welder?').toLowerCase();
   if (weld === 'yes'){
     alert('Thats right! Theres not a gap I cant fill!');
     console.log('Thats right! Theres not a gap I cant fill!')
   } else {
-    alert('Come on! You barely know me!');
+    alert('Wrong! I started welding as a hobby and decided to master it!');
     console.log('Come on! You barely know me!');
   }
 }
 question5();
-// let finalMessage = prompt("Hope you enjoyed the page " + userName + "! Come back soon to check for updates!");
 
-// prompt(finalMessage);
+let finalMessage = alert("Hope you enjoyed the guessing game " + userName + "! Come back soon to check for updates!");
+
+// alert(finalMessage);
