@@ -1,13 +1,13 @@
 'use strict';
 
 let userName = prompt('Hello! What is your name?');
-alert('Welcome! ' + userName + ', Thanks for checking out my page!')
+alert('Welcome! ' + userName + ', Thanks for checking out my page! Lets play a game! See if you can get the following questions right!')
 
 
 function question1() {
-  let location = prompt('Which state do you think I live in?').toLowerCase();
-  if (location === 'florida') {
-    alert('Correct! The SunShine State');
+  let location = prompt('Do I live in North Dakota?').toLowerCase();
+  if (location === 'no') {
+    alert('Correct! I live in the sunshine state of Florida!');
     console.log('Correct!');
   } else {
     alert('Wrong! Who would want to live there?!');
