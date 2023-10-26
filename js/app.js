@@ -64,6 +64,29 @@ function question5(){
 }
 question5();
 
+function question6(){
+  let correctKidsCount = 2;
+  for (let i = 0; i < 4; i++) {
+    let kids = prompt('Guess how many kids I have?');
+    let guessedKids = parseInt(kids);
+    if (guessedKids === correctKidsCount) {
+      alert('That\'s right! And we are wanting more!');
+      break;
+    }
+    else if (guessedKids < correctKidsCount){
+      alert('To low! Try again');
+    } else {
+      alert('To high! Try again.');
+    // } if (guessedKids !== correctKidsCount){
+    //   alert('You had four guesses, and the correct answer is' + correctKidsCount + '.')
+    // }
+  }
+}
+if (guessedKids !== correctKidsCount){
+  alert('You had four guesses, and the correct answer is' + correctKidsCount + '.')
+}
+question6();
+
 let finalMessage = alert("Hope you enjoyed the guessing game " + userName + "! Come back soon to check for updates!");
 
-// alert(finalMessage);
+// alert(finalMessage)
