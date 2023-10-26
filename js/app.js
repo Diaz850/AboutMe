@@ -85,8 +85,8 @@ function question6(){
 if (guessedKids !== correctKidsCount){
   alert('You had four guesses, and the correct answer is' + correctKidsCount + '.')
 }
+}
 question6();
 
 let finalMessage = alert("Hope you enjoyed the guessing game " + userName + "! Come back soon to check for updates!");
-
-// alert(finalMessage)
+alert(finalMessage);
