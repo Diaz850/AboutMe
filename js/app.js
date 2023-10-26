@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 let userName = prompt('Hello! What is your name?');
 alert('Welcome! ' + userName + ', Thanks for checking out my page! Lets play a game! See if you can get the following questions right!')
 
@@ -63,8 +63,11 @@ function question5(){
   }
 }
 question5();
+*/
 
-function question6(){
+//let correctKidsCount = 2;
+//for (let i = 0; i < 4; i++)
+function question6() {
   let correctKidsCount = 2;
   for (let i = 0; i < 4; i++) {
     let kids = prompt('Guess how many kids I have?');
@@ -73,18 +76,15 @@ function question6(){
       alert('That\'s right! And we are wanting more!');
       break;
     }
-    else if (guessedKids < correctKidsCount){
+    else if (guessedKids < correctKidsCount) {
       alert('To low! Try again');
     } else {
       alert('To high! Try again.');
-    // } if (guessedKids !== correctKidsCount){
-    //   alert('You had four guesses, and the correct answer is' + correctKidsCount + '.')
-    // }
+    }
   }
-}
-if (guessedKids !== correctKidsCount){
-  alert('You had four guesses, and the correct answer is' + correctKidsCount + '.')
-}
+  if (guessedKids >= 4) {
+    alert('You had four guesses, and the correct answer is' + correctKidsCount + '.');
+  }
 }
 question6();
 
