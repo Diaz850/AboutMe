@@ -65,25 +65,25 @@ function question5(){
 question5();
 
 function question6(){
-  let correctKidsCount = 2;
+  let correctKids = 2;
   for (let i = 0; i < 4; i++) {
     let kids = prompt('Guess how many kids I have?');
     let guessedKids = parseInt(kids);
-    if (guessedKids === correctKidsCount) {
+    if (guessedKids === correctKids) {
       alert('That\'s right! And we are wanting more!');
       break;
     }
-    else if (guessedKids < correctKidsCount){
+    else if (guessedKids < correctKids){
       alert('To low! Try again');
     } else {
       alert('To high! Try again.');
-    // } if (guessedKids !== correctKidsCount){
-    //   alert('You had four guesses, and the correct answer is' + correctKidsCount + '.')
+    // } if (guessedKids >= 3){
+    //   alert('You had four guesses, and the correct answer is' + correctKids + '.')
     // }
   }
 }
-if (guessedKids !== correctKidsCount){
-  alert('You had four guesses, and the correct answer is' + correctKidsCount + '.')
+if (guessedKids !== correctKids){
+  alert('You had four guesses, and the correct answer is' + correctKids + '.')
 }
 }
 question6();
