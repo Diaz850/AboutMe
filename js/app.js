@@ -77,9 +77,9 @@ function question6(){
       alert('To low! Try again');
     } else {
       alert('To high! Try again.');
-    // } if (guessedKids >= 3){
-    //   alert('You had four guesses, and the correct answer is' + correctKids + '.')
-    // }
+    } if (guessedKids >= 3){
+      alert('You had four guesses, and the correct answer is' + correctKids + '.')
+    }
   }
 }
 if (guessedKids !== correctKids){
