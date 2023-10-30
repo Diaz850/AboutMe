@@ -66,7 +66,7 @@ question5();
 
 function question6(){
   let correctKids = 2;
-  for (let i = 0; i < 4; i++) {
+  for (let turns= 0; turns < 4; turns++) {
     let kids = prompt('Guess how many kids I have?');
     let guessedKids = parseInt(kids);
     if (guessedKids === correctKids) {
@@ -77,15 +77,15 @@ function question6(){
       alert('To low! Try again');
     } else {
       alert('To high! Try again.');
-    } if (guessedKids >= 3){
+    } if (turns >= 3){
       alert('You had four guesses, and the correct answer is' + correctKids + '.')
     }
   }
 }
-if (guessedKids !== correctKids){
-  alert('You had four guesses, and the correct answer is' + correctKids + '.')
-}
-}
+// if (guessedKids !== correctKids){
+//   alert('You had four guesses, and the correct answer is' + correctKids + '.')
+// }
+// }
 question6();
 
 let finalMessage = alert("Hope you enjoyed the guessing game " + userName + "! Come back soon to check for updates!");
