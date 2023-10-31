@@ -89,10 +89,10 @@ let possibleAnswers = ['wings', 'pizza', 'hotdog', 'corndog', 'turkeyleg', 'nach
 let maxAttempts = 6;
 let userScore = 0;
 for (let attempt = 1; attempt <= maxAttempts; attempt ++){
-  let guess = prompt('Guess one of the correct answers:')
+  let guess = prompt('Guess one of my all time favorite fair foods!')
  let correctGuess = false
   for (let i=0; i < possibleAnswers.length; i++){
-    if(guess === possibleAnswers[i]){
+    if (guess === possibleAnswers[i])  {
       correctGuess = true;
       userScore++;
       break
@@ -117,11 +117,9 @@ let totalScore = 0;
 totalScore += guessMultipleAnswersQuestion();
 // Add more questions as needed
 
-// Display the final score
+// Display the final score 
 alert('You got ' + totalScore + ' out of 7 questions correct.');
-function guessMultipleAnswersQuestion();
 
 
-
-let finalMessage = alert("Hope you enjoyed the guessing game " + userName + "! Come back soon to check for updates!");
-alert(finalMessage);
+let finalContext = alert("Hope you enjoyed the guessing game " + userName + "! Come back soon to check for updates!");
+alert(finalContext);
