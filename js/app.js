@@ -77,16 +77,51 @@ function question6(){
       alert('To low! Try again');
     } else {
       alert('To high! Try again.');
-    } if (turns >= 3){
+    } if (turns === 3){
       alert('You had four guesses, and the correct answer is' + correctKids + '.')
     }
   }
 }
-// if (guessedKids !== correctKids){
-//   alert('You had four guesses, and the correct answer is' + correctKids + '.')
-// }
-// }
 question6();
+
+function guessMultipleAnswersQuestion(){
+let possibleAnswers = ['wings', 'pizza', 'hotdog', 'corndog', 'turkeyleg', 'nachos']
+let maxAttempts = 6;
+let userScore = 0;
+for (let attempt = 1; attempt <= maxAttempts; attempt ++){
+  let guess = prompt('Guess one of the correct answers:')
+ let correctGuess = false
+  for (let i=0; i < possibleAnswers.length; i++){
+    if(guess === possibleAnswers[i]){
+      correctGuess = true;
+      userScore++;
+      break
+    }
+  }
+  if (correctGuess) {
+    alert('That\'s correct! ' + guess + ' is one of the correct answers.');
+    break;
+  } else if (attempt < maxAttempts) {
+    alert('Not quite. You have ' + (maxAttempts - attempt) + ' tries left.');
+  } else {
+    alert('You\'ve run out of tries. The correct answers are: ' + possibleAnswers.join(', '));
+  }
+}
+
+return userScore;
+}
+
+let totalScore = 0;
+
+// Ask and score 7 questions
+totalScore += guessMultipleAnswersQuestion();
+// Add more questions as needed
+
+// Display the final score
+alert('You got ' + totalScore + ' out of 7 questions correct.');
+function guessMultipleAnswersQuestion();
+
+
 
 let finalMessage = alert("Hope you enjoyed the guessing game " + userName + "! Come back soon to check for updates!");
 alert(finalMessage);
